@@ -1,0 +1,105 @@
+/**
+ * BACKGROUND 3D ANIMATED SYSTEM
+ * High-Fashion Editorial Monochromatic 3D Background with Dynamic Canvas & CSS 3D Depth
+ */
+
+.background-3d-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at 75% 25%, #FAF9F8 0%, #FFFFFF 65%, #F7F7F7 100%);
+}
+
+.background-3d-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+/* 3D Perspective CSS Accents */
+.bg-3d-accent-element {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bg-3d-accent-bottom-left {
+  bottom: 16%;
+  left: 6%;
+}
+
+.bg-3d-cube-stage {
+  perspective: 900px;
+  transform-style: preserve-3d;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-3d-cube-ring {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px dashed rgba(40, 40, 40, 0.14);
+  transform-style: preserve-3d;
+  animation: spin3DRing 22s linear infinite;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.02);
+}
+
+.bg-3d-cube-ring.ring-alt {
+  width: 110px;
+  height: 110px;
+  border: 1px solid rgba(40, 40, 40, 0.10);
+  animation: spin3DRingReverse 26s linear infinite;
+}
+
+@keyframes spin3DRing {
+  0% {
+    transform: rotateX(65deg) rotateY(15deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(65deg) rotateY(15deg) rotateZ(360deg);
+  }
+}
+
+@keyframes spin3DRingReverse {
+  0% {
+    transform: rotateX(-55deg) rotateY(-25deg) rotateZ(360deg);
+  }
+  100% {
+    transform: rotateX(-55deg) rotateY(-25deg) rotateZ(0deg);
+  }
+}
+
+/* Ensure sections stay transparent / semi-translucent so 3D background flows seamlessly */
+.hero-section {
+  background-color: transparent !important;
+}
+
+.portfolio-section {
+  background-color: transparent;
+}
+
+.portfolio-section.alt-bg {
+  background-color: rgba(248, 248, 248, 0.62) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+@media (max-width: 991px) {
+  .bg-3d-accent-element {
+    display: none;
+  }
+}
+

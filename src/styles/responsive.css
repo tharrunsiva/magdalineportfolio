@@ -1,0 +1,251 @@
+/**
+ * RESPONSIVE ADAPTATIONS
+ * Verified for 360px, 390px, 768px, 1024px, 1440px+
+ */
+
+/* Extra Large Screens (>= 1440px) */
+@media (min-width: 1440px) {
+  .hero-script-name {
+    font-size: 6rem;
+  }
+  .section-title {
+    font-size: 2.8rem;
+  }
+}
+
+/* Desktops and Laptops (<= 1200px) */
+@media (max-width: 1200px) {
+  .hero-script-name {
+    font-size: 4.8rem;
+  }
+  .hero-arch-composition {
+    max-width: 440px;
+    height: 580px;
+  }
+  .hero-intro-content {
+    padding-left: 1.15rem;
+  }
+}
+
+/* Tablets Landscape & Medium Screens (<= 991px) */
+@media (max-width: 991px) {
+  .nav-pill-wrapper {
+    display: none;
+  }
+
+  .nav-social-actions {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+
+  .mobile-nav-drawer {
+    display: block;
+  }
+
+  .hero-section {
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
+
+  .hero-row {
+    flex-direction: column-reverse;
+    gap: 3.5rem;
+    text-align: center;
+  }
+
+  .hero-portrait-wrapper {
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center !important;
+  }
+
+  .hero-arch-composition {
+    max-width: 360px;
+    height: 480px;
+  }
+
+  .hero-intro-content {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-greeting-group {
+    justify-content: center;
+  }
+
+  .hero-script-name {
+    font-size: 4.2rem;
+  }
+
+  .hero-sparkle-icon {
+    right: -24px;
+    top: 5px;
+  }
+
+  .hero-motto {
+    justify-content: center;
+  }
+
+  .hero-bio-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .scroll-down-indicator {
+    display: none;
+  }
+
+
+
+  .about-image-wrapper {
+    margin-top: 2.5rem;
+  }
+
+  .about-image-frame img {
+    height: 380px;
+  }
+}
+
+/* Tablets Portrait (<= 768px) */
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding: 4.5rem 0;
+  }
+
+  .section-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-script-name {
+    font-size: 3.5rem;
+  }
+
+  .hero-arch-composition {
+    max-width: 320px;
+    height: 430px;
+  }
+
+  .arch-portrait-frame {
+    border-radius: 200px 200px 24px 24px;
+  }
+
+  .arch-halo-backdrop {
+    border-radius: 220px 220px 32px 32px;
+  }
+
+  .arch-outer-ring {
+    border-radius: 240px 240px 40px 40px;
+  }
+
+  .timeline-track {
+    left: 20px;
+  }
+
+  .timeline-node {
+    left: 9px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .timeline-item {
+    padding-left: 52px;
+  }
+
+  .timeline-card {
+    padding: 1.5rem;
+  }
+
+  .contact-form-card {
+    padding: 1.75rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Devices (<= 480px / 390px / 360px) */
+@media (max-width: 480px) {
+  .hero-script-name {
+    font-size: 2.9rem;
+  }
+
+  .hero-motto {
+    font-size: 0.75rem;
+    letter-spacing: 0.22em;
+    gap: 0.5rem;
+  }
+
+  .hero-bio-lead {
+    font-size: 1rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .btn-hero-primary,
+  .btn-hero-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1.5rem;
+  }
+
+  .arch-portrait-frame {
+    max-width: 280px;
+    height: 380px;
+    border-radius: 170px 170px 20px 20px;
+  }
+
+  .arch-halo-backdrop {
+    border-radius: 190px 190px 24px 24px;
+  }
+
+  .about-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-nav-list {
+    justify-content: center;
+  }
+}
+
+/* Ultra Small Viewports (<= 360px) */
+@media (max-width: 360px) {
+  .hero-script-name {
+    font-size: 2.5rem;
+  }
+  
+  .arch-portrait-frame {
+    max-width: 250px;
+    height: 340px;
+  }
+}
