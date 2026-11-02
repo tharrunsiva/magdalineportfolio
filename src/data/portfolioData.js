@@ -54,7 +54,16 @@ export const portfolioData = {
         text: "Get In Touch",
         href: "#contact",
       },
+      resume: {
+        text: "Download Resume",
+        href: "/resume.pdf",
+        download: "Magdaline_Blessy_Resume.pdf",
+      },
     },
+    
+    // Resume File Configuration (Stored in public/ folder)
+    resumeUrl: "/resume.pdf",
+    resumeFilename: "Magdaline_Blessy_Resume.pdf",
     
     // Status badge
     status: {

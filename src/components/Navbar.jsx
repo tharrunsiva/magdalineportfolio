@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaLinkedinIn, FaGithub, FaEnvelope, FaBars, FaTimes } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaEnvelope, FaBars, FaTimes, FaDownload } from 'react-icons/fa';
 
 /**
  * Navbar Component
@@ -113,8 +113,18 @@ const Navbar = ({ data }) => {
             </ul>
           </nav>
 
-          {/* Right: Circular Social Action Icons */}
+          {/* Right: Circular Social Action Icons & Resume */}
           <div className="nav-social-actions">
+            <a
+              href={personal.resumeUrl || '/resume.pdf'}
+              download={personal.resumeFilename || 'Magdaline_Blessy_Resume.pdf'}
+              className="nav-resume-pill"
+              title="Download Resume (PDF)"
+            >
+              <FaDownload size={11} />
+              <span>Resume</span>
+            </a>
+
             {socialLinks.map((social, index) => (
               <a
                 key={index}
@@ -157,6 +167,16 @@ const Navbar = ({ data }) => {
               </a>
             </li>
           ))}
+          <li className="mt-2">
+            <a
+              href={personal.resumeUrl || '/resume.pdf'}
+              download={personal.resumeFilename || 'Magdaline_Blessy_Resume.pdf'}
+              className="mobile-nav-link text-dark fw-bold"
+            >
+              <span>Download Resume (PDF)</span>
+              <span>↓</span>
+            </a>
+          </li>
         </ul>
 
         <div className="mobile-socials">

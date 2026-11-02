@@ -113,11 +113,43 @@
   box-shadow: 0 2px 8px rgba(23, 23, 23, 0.2);
 }
 
-/* Right Social Icon Circles */
+/* Right Social Icon Circles & Resume Pill */
 .nav-social-actions {
   display: flex;
   align-items: center;
   gap: 0.65rem;
+}
+
+.nav-resume-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #171717;
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.nav-resume-pill:hover {
+  background: #171717;
+  color: #FFFFFF !important;
+  border-color: #171717;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(23, 23, 23, 0.18);
+}
+
+.nav-resume-pill svg {
+  transition: transform 0.2s ease;
+}
+
+.nav-resume-pill:hover svg {
+  transform: translateY(1.5px);
 }
 
 .social-circle-btn {

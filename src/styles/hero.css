@@ -425,6 +425,40 @@
   transform: scale(1.15) rotate(-6deg);
 }
 
+/* Resume Direct Download Button */
+.btn-hero-resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #F6F6F6;
+  color: #171717 !important;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.88rem 1.85rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid #D5D5D5;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.btn-hero-resume:hover {
+  background-color: #171717;
+  color: #FFFFFF !important;
+  border-color: #171717;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(23, 23, 23, 0.2);
+}
+
+.btn-hero-resume svg {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-hero-resume:hover svg {
+  transform: translateY(2px);
+}
+
 /* Availability Badge */
 .hero-status-pill {
   display: inline-flex;

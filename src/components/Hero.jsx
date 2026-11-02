@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaArrowRight, FaEnvelope } from 'react-icons/fa';
+import { FaArrowRight, FaEnvelope, FaDownload } from 'react-icons/fa';
 import TiltCard from './TiltCard';
 import heroPortraitFallback from '../assets/images/hero-portrait-sample.jpg';
 
@@ -125,6 +125,17 @@ const Hero = ({ data }) => {
                 >
                   <span>{personal.cta.secondary.text}</span>
                   <FaEnvelope size={13} />
+                </a>
+
+                {/* Direct Download Resume Button */}
+                <a
+                  href={personal.resumeUrl || '/resume.pdf'}
+                  download={personal.resumeFilename || 'Magdaline_Blessy_Resume.pdf'}
+                  className="btn-hero-resume"
+                  title="Download Magdaline Blessy's Resume (PDF)"
+                >
+                  <FaDownload size={13} />
+                  <span>Resume</span>
                 </a>
               </div>
 
